@@ -34,7 +34,8 @@ def reverse():
     print(res)
 
 def hello():
-    f = open("names", "r")
+    filename = input()
+    f = open(filename, "r")
     a = f.read().split(" ")
     a.sort()
     print(a)
