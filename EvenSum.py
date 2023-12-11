@@ -39,6 +39,21 @@ def hello():
     a = f.read().split(" ")
     a.sort()
     print(a)
-hello()
 
+
+def hello2():
+    filename = input()
+    f = open(filename, "r")
+    lines = f.read().splitlines( )
+    f.close()
+    f = open(filename, "r")
+    words = f.read().split(" ") 
+    f.close()
+    f = open(filename, "r")
+    charecters = [*f.read()]
+    f.close()
+    print('words ',len(words))
+    print('charecters ' , len(charecters))
+    print('lines ', len(lines))
+hello2()
 
